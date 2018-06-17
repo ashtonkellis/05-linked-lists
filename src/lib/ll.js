@@ -16,7 +16,10 @@ module.exports = class LinkedList {
     return this;
   }
 
-  // the insertion is O(1) time complexity, however in order the insert at the end, you must walk through the entire linked list, which is an O(n) time complexity operation, where n is the number of nodes
+  // the insertion is O(1) time complexity, 
+  // however in order the insert at the end, you must walk through 
+  // the entire linked list, which is an O(n) time complexity 
+  // operation, where n is the number of nodes
   // O(1) space complexity
   insertAtEnd(value) {
     const newNode = new Node(value);
@@ -52,7 +55,9 @@ module.exports = class LinkedList {
     return null;
   }
 
-  // the removal is O(1) time complexity, however in order the remove at the end, you must walk through the entire linked list, which is an O(n) time complexity operation, where n is the number of nodes
+  // the removal is O(1) time complexity, however in order the remove at the end, you must walk 
+  // through the entire linked list, which is an O(n) time complexity operation, where n is the 
+  // number of nodes
   // O(1) space complexity
   pop() {
     if (!this.head) return undefined;
@@ -74,7 +79,9 @@ module.exports = class LinkedList {
     return poppedNode.value;
   }
 
-  // the removal is O(1) time complexity, however in order the remove at the end, you must walk through the entire linked list, which is an O(n) time complexity operation, where n is the number of nodes
+  // the removal is O(1) time complexity, however in order the remove at the end, you must walk 
+  // through the entire linked list, which is an O(n) time complexity operation, where n is the 
+  // number of nodes
   // O(1) space compexity
   remove(value) {
     if (!this.head) {
